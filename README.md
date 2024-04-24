@@ -20,22 +20,19 @@ Este projeto foi desenvolvido para o desafio proposto por uma empresa durante um
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu_usuario/seu_projeto.git
-Construa o container Docker:
+   git clone [https://github.com/seu_usuario/seu_projeto.git](https://github.com/solosando/hackaton-hiperstream-codeclub/blob/main/Dockerfile)
+
+2. Construa o container Docker:
 docker build -t seu_projeto .
-Rode o container:
+
+3. Rode o container:
 docker run -p 8000:8000 seu_projeto
+
 Uso
 Para usar o aplicativo, acesse http://localhost:8000 no seu navegador, envie um arquivo CSV e receba o diagrama em PDF.
 
-Contribuindo
-Contribuições são sempre bem-vindas! Veja como:
-
-Fork o projeto
-Crie sua branch de recursos (git checkout -b feature/AmazingFeature)
-Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-Push para a branch (git push origin feature/AmazingFeature)
-Abra um Pull Request
-Contato
-Equipe Code Club - email@example.com
-Link do Projeto: https://github.com/seu_usuario/seu_projeto
+## Equipe
+Ariel Ra:
+Luccas Auada Ra:
+Equipe Code Club - HIPER-220
+Link do Projeto: [https://github.com/seu_usuario/seu_projeto](https://github.com/solosando/hackaton-hiperstream-codeclub/blob/main/README.md)
