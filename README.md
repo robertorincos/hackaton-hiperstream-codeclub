@@ -2,7 +2,9 @@
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido para o desafio proposto por uma empresa durante um hackathon. A aplicação recebe um arquivo CSV e retorna um diagrama em formato PDF. A solução encontrada pela equipe Code Club foi a criação de um site web, que permite ao usuário enviar o arquivo CSV e receber o diagrama PDF correspondente. O site é suportado por um programa em Python, que roda em um ambiente Docker.
+Este projeto foi desenvolvido para o desafio proposto por uma empresa durante um hackathon. A aplicação recebe um arquivo CSV e retorna um diagrama em formato PDF. 
+
+A solução encontrada pela equipe Code Club foi a criação de um site web, que permite ao usuário enviar o arquivo CSV e receber o diagrama PDF correspondente. O site é suportado por um programa em Python, que roda em um ambiente Docker.
 
 ### Construído Com
 
