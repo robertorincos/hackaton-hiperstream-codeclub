@@ -7,16 +7,17 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #FFB001;
-            color: ##FFB001;
+            background-color: #FFB001; /* Updated color */
+            color: #333;
             margin: 0;
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: 100vh;
         }
         .header {
-            background-color: #FDB147; /* Pastel Orange */
+            background-color: #FDB147; /* Consider changing if you want to match the new yellow */
             padding: 10px;
             border-radius: 5px;
             width: 100%;
@@ -62,8 +63,14 @@
             margin-top: 20px;
         }
         .logo-container img {
-            max-width: 50%; 
+            max-width: 50%; /* Ajuste este valor conforme necessário */
             height: auto;
+        }
+        #pdf-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -86,6 +93,20 @@
     </form>
 
     <div id="pdf-container"></div>
+    
+    <script>
+        // Verifica se o PDF foi recebido e exibe no iframe
+        if (window.location.search.includes('pdf')) {
+            const pdfContainer = document.getElementById('pdf-container');
+            const pdfUrl = window.location.origin + '/pdf' + window.location.search;
+            const iframe = document.createElement('iframe');
+            iframe.src = pdfUrl;
+            iframe.width = "100%";
+            iframe.height = "600px";
+            iframe.style.border = "none";
+            pdfContainer.appendChild(iframe);
+        }
+    </script>
 
 </body>
 </html>
