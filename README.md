@@ -45,8 +45,8 @@ Equipe Code Club - HIPER-220
 
 Construído por:
 Ariel  Oliveira Solosando (RA: 10435082)
-Luccas Auada (RA: )
-Roberto Rinco (RA: )
+Luccas Auada (RA: 10403286)
+Roberto Rinco (RA: 10403243)
 
 ## Licença
 Este projeto está licenciado sob a licença MIT - consulte o arquivo.
