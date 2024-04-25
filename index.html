@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon 2024 - Hiper Stream</title>
+    <title>Hackathon 2024 - HiperStream</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #FFB001; /* Updated color */
-            color: #333;
+            background-color: #006C47; /* Dark green */
+            color: #FFF;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -16,27 +16,39 @@
             align-items: center;
             height: 100vh;
         }
-        .header {
-            background-color: #FDB147; /* Consider changing if you want to match the new yellow */
-            padding: 10px;
+        .title-box {
+            background-color: #3EB489; /* Lightest green */
+            color: #FFF;
+            padding: 20px;
             border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .title-box h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .title-box h2 {
+            margin: 10px 0 0;
+            font-size: 1.8em;
+        }
+        .header {
+            padding: 10px;
             width: 100%;
             text-align: center;
         }
-        .header h1 {
+        .header h1, .header h2 {
+            color: #000; /* Changed text color to black */
             margin: 0;
-            color: #000;
-        }
-        .header h2 {
-            margin: 5px 0;
-            color: #000;
         }
         form {
-            background-color: #fff;
+            background-color: #00835C; /* Medium-dark green */
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
             margin-top: 20px;
+            width: 100%;
+            max-width: 600px; /* Or any other max-width */
         }
         label {
             display: block;
@@ -46,25 +58,17 @@
             margin-bottom: 20px;
         }
         button {
-            background-color: #333;
-            color: #fff;
+            background-color: #1C9B72; /* Medium green */
+            color: #FFF;
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            width: 100%;
         }
         button:hover {
-            background-color: #555;
-        }
-        .logo-container {
-            width: 100%;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .logo-container img {
-            max-width: 50%; /* Ajuste este valor conforme necessário */
-            height: auto;
+            background-color: #006C47; /* Dark green */
         }
         #pdf-container iframe {
             width: 100%;
@@ -76,14 +80,14 @@
 </head>
 <body>
 
-    <div class="header">
-        <h1>Hackathon 2024</h1>
-        <h2>Hiper Stream</h2>
+    <div class="title-box">
+        <h1>HACKATHON 2024</h1>
+        <h2>HiperStream</h2>
     </div>
 
-    <div class="logo-container">
-        <!-- Substitua 'caminho_para_logo.png' pelo caminho real do logo após fazer o upload para o servidor -->
-        <img src="caminho_para_logo.png" alt="Logo Hackathon 2024">
+    <div class="header">
+        <h1>Equipe: CODE CLUB</h1>
+        <h2>Código: HIPER-220</h2>
     </div>
 
     <form action="/generate" method="post" enctype="multipart/form-data">
