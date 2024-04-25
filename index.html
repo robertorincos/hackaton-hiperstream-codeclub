@@ -1,75 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowchart Generator</title>
+    <title>Hackathon 2024 - Hiper Stream</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #FDFD96; /* Pastel Yellow */
+            color: #333;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
         }
-        h1 {
-            color: #333;
+        .header {
+            background-color: #FDB147; /* Pastel Orange */
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #000;
+        }
+        .header h2 {
+            margin: 5px 0;
+            color: #000;
         }
         form {
-            background: white;
+            background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
         label {
-            margin-bottom: 10px;
             display: block;
+            margin-bottom: 10px;
         }
         input[type="file"] {
             margin-bottom: 20px;
         }
         button {
-            background-color: #007BFF;
-            color: white;
+            background-color: #333;
+            color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #555;
         }
-        #pdf-container {
-            margin-top: 20px;
-            width: 80%;
-        }
-        iframe {
+        .logo-container {
             width: 100%;
-            height: 500px;
-            border: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            max-width: 50%; /* Ajuste este valor conforme necessário */
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Flowchart Generator</h1>
+
+    <div class="header">
+        <h1>Hackathon 2024</h1>
+        <h2>Hiper Stream</h2>
+    </div>
+
+    <div class="logo-container">
+        <!-- Substitua 'caminho_para_logo.png' pelo caminho real do logo após fazer o upload para o servidor -->
+        <img src="caminho_para_logo.png" alt="Logo Hackathon 2024">
+    </div>
+
     <form action="/generate" method="post" enctype="multipart/form-data">
-        <label for="file">Choose a CSV file:</label>
+        <label for="file">Escolha um arquivo CSV:</label>
         <input type="file" id="file" name="file" accept=".csv" required>
-        <button type="submit">Generate Flowchart</button>
+        <button type="submit">Gerar Diagrama</button>
     </form>
+
     <div id="pdf-container"></div>
-    <script>
-        // Check if the PDF was received and display it
-        if (window.location.search.includes('pdf')) {
-            const pdfContainer = document.getElementById('pdf-container');
-            const pdfUrl = window.location.origin + '/pdf' + window.location.search;
-            pdfContainer.innerHTML = `<iframe src="${pdfUrl}" width="100%" height="600px" frameborder="0"></iframe>`;
-        }
-    </script>
+
 </body>
 </html>
